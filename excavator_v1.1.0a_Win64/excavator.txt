@@ -1,0 +1,41 @@
+What is Excavator?
+------------------
+
+Excavator is GPU miner by NiceHash for mining various altcoins on NiceHash.com.
+Excavator is being actively developed by djeZo. Miner is using custom built code
+base with modern approach and supporting modern video cards (NVIDIA only for now).
+
+
+How to use Excavator?
+---------------------
+
+Simple: edit 'start_pascal+restart_script.bat' or 
+	'start_pascal+restart_script.bat' file and run.
+
+Advanced: launch from command line with parameter '-h' to get command line 
+	options and how to use it.
+
+WARNING! Excavator supports overclocking. Use overclocking at your own risk.
+OVERCLOCKING MAY PERMANENTLY DAMAGE YOUR COMPUTER HARDWARE!
+
+
+Changelog
+---------
+
+v1.1.0a
+- added equihash algorithm
+- added sha256t algorithm (experiment)
+- added support for overclocking and setting TDP
+- bug fixes and improvements
+
+v1.0.0b
+- fixed cudart64_65.dll dep
+- fixed job parsing mem leak
+- fixed diff parsing in rare cases
+- fixed extranonce2 counter
+- few % faster pascal algorithm
+- added '-cb' and '-ct' params to specify number of blocks and tpb
+
+v1.0.0a
+- initial public alpha release
+- added support for PascalCoin

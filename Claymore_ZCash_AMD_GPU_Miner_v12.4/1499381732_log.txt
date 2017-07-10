@@ -1,0 +1,12 @@
+17:55:32:490	4884	args: -zpool eu1-zcash.flypool.org:3333 -zwal t1RjQjDbPQ9Syp97DHFyzvgZhcjgLTMwhaq -zpsw z 
+17:55:32:493	4884	
+17:55:32:496	4884	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+17:55:32:499	4884	บ             Claymore's ZCash AMD GPU Miner v12.4               บ
+17:55:32:502	4884	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+17:55:32:505	4884	
+17:55:32:710	4884	ZEC: 1 pool is specified
+17:55:32:713	4884	Main ZCash pool is eu1-zcash.flypool.org:3333
+17:55:32:974	4884	OpenCL platform: AMD Accelerated Parallel Processing
+17:55:32:977	4884	OpenCL platform: NVIDIA CUDA
+17:55:32:983	4884	No AMD cards in the list.
+17:55:32:986	4884	No AMD OPENCLGPUs found, exit

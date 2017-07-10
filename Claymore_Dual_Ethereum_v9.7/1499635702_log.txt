@@ -1,0 +1,19 @@
+16:28:22:626	727c	args: -epool us1.ethermine.org:4444 -ewal 0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39 -epsw x 
+16:28:22:628	727c	
+16:28:22:631	727c	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+16:28:22:635	727c	บ      Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v9.7      บ
+16:28:22:637	727c	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+16:28:22:640	727c	
+16:28:22:843	727c	ETH: 1 pool is specified
+16:28:22:846	727c	Main Ethereum pool is us1.ethermine.org:4444
+16:28:22:848	727c	DCR: 0 pool is specified
+16:28:23:198	727c	OpenCL platform: AMD Accelerated Parallel Processing
+16:28:23:203	727c	OpenCL platform: NVIDIA CUDA
+16:28:23:204	727c	No AMD cards in the list.
+16:28:23:426	727c	CUDA initializing...
+
+16:28:23:430	727c	NVIDIA Cards available: 1 
+16:28:23:433	727c	CUDA Driver Version/Runtime Version: 8.0/8.0
+16:28:23:436	727c	GPU #0: GeForce GTX 1080 Ti, 11264 MB available, 28 compute units, capability: 6.1
+
+16:28:23:439	727c	Total cards: 1 

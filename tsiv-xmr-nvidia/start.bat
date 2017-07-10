@@ -1,0 +1,1 @@
+ccminer -q -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 46TgqBPmxFYiEhWfwGMRWWaqyrardCVB2JtZCKyAmatGeuPWMsNAJmFU3cCiTSn16XT2nw5XMXcJVidVxR46F3i57N5K7NN.YOUR_PAYMENT_ID.YOUR_WORKER_NAME/YOUR_EMAIL -p x

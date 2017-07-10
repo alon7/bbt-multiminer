@@ -1,0 +1,9 @@
+-zpool eu1-zcash.flypool.org:3333
+-zwal t1RjQjDbPQ9Syp97DHFyzvgZhcjgLTMwhaq
+-zpsw z
+#-tt 75
+#-i 8
+#-powlim 50
+#-a 2
+#-asm 0
+#-allpools 1
