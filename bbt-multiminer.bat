@@ -71,6 +71,7 @@ ECHO 25 - AMD and NVIDIA Claymore - Ubiq to Sexy.Pool Only
 ECHO 26 - AMD and NVIDIA Claymore - DBIX to Hodl.Pool Only
 ECHO 27 - AMD and NVIDIA Claymore - DBIX to Hodl Pool and Siacoin to Nanopool
 ECHO 28 - AMD and NVIDIA Claymore - Ubiq to Hodl Pool
+ECHO 29 - AMD and NVIDIA Claymore - Ubiq to ubiqpool and Siacoin ti Nanopool
 ECHO 99 - EXIT
 ECHO.
 
@@ -103,6 +104,7 @@ IF %M%==25 GOTO ClaymoreUBIQ
 IF %M%==26 GOTO ClaymoreDBIX2
 IF %M%==27 GOTO ClaymoreDBIXSia2
 IF %M%==28 GOTO ClaymoreUBIQ2
+IF %M%==29 GOTO ClaymoreUBIQSia
 IF %M%==99 GOTO EOF
 
 :ethminer1
@@ -251,6 +253,11 @@ pause
 :ClaymoreUBIQ2
 rem AMD & NVIDIA Claymore - ubiq to hodl
 Claymore_Dual_Ethereum_v9.7\EthDcrMiner64.exe -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal %UBIQ_WALLET_ADDRESS% -allpools 1
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+:ClaymoreUBIQSia
+rem AMD & NVIDIA Claymore - ubiq to ubiqpool and siacoin to nanopool
+Claymore_Dual_Ethereum_v9.7\EthDcrMiner64.exe -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal %UBIQ_WALLET_ADDRESS% -dpool stratum+tcp://sia-eu1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
