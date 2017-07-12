@@ -195,19 +195,19 @@ ECHO 27.  AMD SGMiner Lbry Credits Miner - Lbry to coinmine.pl AMD ONLY
 ECHO ====================================================
 ECHO *                       DBIX                       *
 ECHO ====================================================
-ECHO 23.  AMD and NVIDIA Claymore - DBIX to Sexy.Pool Only
-ECHO 24.  AMD and NVIDIA Claymore - DBIX to Sexy.Pool and Siacoin to Nanopool
-ECHO 26.  AMD and NVIDIA Claymore - DBIX to Hodl.Pool Only
-ECHO 27.  AMD and NVIDIA Claymore - DBIX to Hodl Pool and Siacoin to Nanopool
+ECHO 28.  AMD and NVIDIA Claymore - DBIX to Sexy.Pool Only
+ECHO 29.  AMD and NVIDIA Claymore - DBIX to Sexy.Pool and Siacoin to Nanopool
+ECHO 30.  AMD and NVIDIA Claymore - DBIX to Hodl.Pool Only
+ECHO 31.  AMD and NVIDIA Claymore - DBIX to Hodl Pool and Siacoin to Nanopool
 ECHO ====================================================
 ECHO *                       UBIQ                       *
 ECHO ====================================================
-ECHO 25.  AMD and NVIDIA Claymore - Ubiq to UbiqPool Only
-ECHO 25.  AMD and NVIDIA Claymore - Ubiq to Sexy.Pool Only
-ECHO 28.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool
-ECHO 29.  AMD and NVIDIA Claymore - Ubiq to UbiqPool  and Siacoin to Nanopool
-ECHO 30.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Siacoin to Nanopool
-ECHO 31.  AMD and NVIDIA Claymore - Ubiq to Sexy.Pool and Siacoin to Nanopool
+ECHO 32.  AMD and NVIDIA Claymore - Ubiq to UbiqPool Only
+ECHO 33.  AMD and NVIDIA Claymore - Ubiq to Sexy.Pool Only
+ECHO 34.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool
+ECHO 35.  AMD and NVIDIA Claymore - Ubiq to UbiqPool  and Siacoin to Nanopool
+ECHO 36.  AMD and NVIDIA Claymore - Ubiq to Hodl Pool and Siacoin to Nanopool
+ECHO 37.  AMD and NVIDIA Claymore - Ubiq to Sexy.Pool and Siacoin to Nanopool
 
 ECHO 99 - EXIT
 ECHO.
@@ -232,10 +232,10 @@ IF %M%==8 GOTO ethereum8
 IF %M%==9 GOTO ethereum9
 IF %M%==10 GOTO ethereum10
 IF %M%==11 GOTO ethereumc1
-IF %M%==12 GOTO ethereumc1
-IF %M%==13 GOTO ethereumc1
-IF %M%==14 GOTO ethereumc1
-IF %M%==15 GOTO ethereumc1
+IF %M%==12 GOTO ethereumc2
+IF %M%==13 GOTO ethereumc3
+IF %M%==14 GOTO ethereumc4
+IF %M%==15 GOTO ethereumc5
 IF %M%==16 GOTO monero1
 IF %M%==17 GOTO monero2
 IF %M%==18 GOTO zcash1
@@ -244,19 +244,21 @@ IF %M%==20 GOTO zcash3
 IF %M%==21 GOTO siacoin1
 IF %M%==22 GOTO pascal1
 IF %M%==23 GOTO pascal2
-IF %M%==24 GOTO lbry1
-IF %M%==25 GOTO lbry2
-IF %M%==26 GOTO dbix1
-IF %M%==27 GOTO dbix2
-IF %M%==28 GOTO dbix3
-IF %M%==29 GOTO dbix4
-IF %M%==30 GOTO ubiq1
-IF %M%==31 GOTO ubiq2
-IF %M%==32 GOTO ubiq3
-IF %M%==33 GOTO ubiq4
-IF %M%==34 GOTO ubiq5
-IF %M%==35 GOTO ubiq6
-IF %M% GTR 35 GOTO EOF
+IF %M%==24 GOTO hush1
+IF %M%==25 GOTO hush2
+IF %M%==26 GOTO lbry1
+IF %M%==27 GOTO lbry2
+IF %M%==28 GOTO dbix1
+IF %M%==29 GOTO dbix2
+IF %M%==30 GOTO dbix3
+IF %M%==31 GOTO dbix4
+IF %M%==32 GOTO ubiq1
+IF %M%==33 GOTO ubiq2
+IF %M%==34 GOTO ubiq3
+IF %M%==35 GOTO ubiq4
+IF %M%==36 GOTO ubiq5
+IF %M%==37 GOTO ubiq6
+IF %M% GTR 37 GOTO EOF
 IF %M% LSS 0 GOTO EOF
 
 
