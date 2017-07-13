@@ -314,7 +314,7 @@ if %ERRORLEVEL% NEQ 0 goto exit
 pause
 
 :ethereum9
-ECHO AMD and NVIDIA Claymore - Nanopool and Siacoin to Nanopool
+ECHO AMD and NVIDIA Claymore - Eth Nanopool and Siacoin to Nanopool
 Claymore_Dual_Ethereum_v9.7\EthDcrMiner64.exe -epool eth-us-east1.nanopool.org:9999 -ewal %ETH_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -epsw x -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia
 if %ERRORLEVEL% NEQ 0 goto exit
 pause
