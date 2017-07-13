@@ -1,14 +1,22 @@
-## Bits Be Trippin' Multi-miner
+## Bits Be Trippin' & alon7 Multi-miner
 
-Bits Be Trippin' is a youtube channel for cryptocurrencies mining.  
-With their knowledge and experience, they released a multi miner that can mine different coins easly .
+Bits Be Trippin' is a youtube channel for cryptocurrencies mining. 
+They created the initial multiminer to enable easy switch between miners.
+I took the script a step further and added more pools, coins and options for easy mining.
 
 ## Setup
 
-According to the cryptocurrency you want to mine, open the bbt-multiminer.bat script and change the wallet address on the top section.  
-You can name your worker under the variable MINER_NAME  
-Change email address by the variable EMAIL_ADDRESS to get email notification from supported mining pools
+1. Right click on bbt-multiminer.bat -> edit 
+2. Under "Wallets", according to the coin you want to mine, change the wallet address to yours
+3. You can name your miner if you change the MINER_NAME variable
+4. Change the EMAIL_ADDRESS to receieve updates from supported pools (nanopool for now)
 
+## How to 
+
+1. Go to Setup before starting
+2. Double click the bbt-multiminer.bat
+3. Chose the miner and the coin you want to mine from the options.
+4. Profit.
 
 ## Contributors
 
