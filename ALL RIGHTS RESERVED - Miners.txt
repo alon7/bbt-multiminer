@@ -1,3 +1,3 @@
-BBT yields any claim to these miners. All miners included in this list were downloaded from their respective repositories, compiled and not tampered with. BBT is only responsible for building the associated bat file in the root of this folder.
+BBT and alon7 yields any claim to these miners. All miners included in this list were downloaded from their respective repositories, compiled and not tampered with. BBT is only responsible for building the associated bat file in the root of this folder.
 
 All miners included can be downloaded from their respective sources.
