@@ -1,0 +1,2 @@
+sgminer -help
+@pause

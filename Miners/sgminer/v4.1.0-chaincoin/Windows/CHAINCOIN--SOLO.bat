@@ -1,0 +1,1 @@
+sgminer.exe --kernel chaincoin -o 127.0.0.1:11995 -u <your rpc username> -p <your rpc password> -I 18 -g 4 -w 128 --lookup-gap 4 -s 1 --queue 1 -E 15
