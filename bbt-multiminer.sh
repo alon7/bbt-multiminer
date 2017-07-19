@@ -18,6 +18,9 @@
 #/ Options:
 #/   --help, -h display this help
 
+#
+# Wallets
+#
 readonly ETH_WALLET_ADDRESS=0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39
 readonly ETC_WALLET_ADDRESS=0x89b455cfd5adb8ba4a69fd6bd082b3d61efe160f
 readonly XMR_WALLET_ADDRESS=452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw.4d8ddccc40568d93
