@@ -21,29 +21,29 @@
 #
 # Wallets
 #
-readonly ETH_WALLET_ADDRESS=0xF897EaFdb787AcD4Da5e2EB5003E42dc1Ef86d39
-readonly ETC_WALLET_ADDRESS=0x89b455cfd5adb8ba4a69fd6bd082b3d61efe160f
-readonly XMR_WALLET_ADDRESS=452eu5HWBcTEwQfwkRFHp9MgC39DhtAio5um8mEs6ZRgcyq9V3Gy3GbJfyASSxepSRQRe6SHcQ27xgorYzyZrn6DSVmWvuw.4d8ddccc40568d93
-readonly SIA_WALLET_ADDRESS=6ce3c1dc8444ce3dc362425124853e0f32e930eaae1dedc6e919a08d8b6664bf71bd744dda24
-readonly ZCASH_WALLET_ADDRESS=t1dBorBoRyznDaRyQzEEB4SkvmCFhmF2ZYk
-readonly PASCAL_WALLET_ADDRESS=86646-64.59e76e7d7a498fbc
-readonly HUSH_WALLET_ADDRESS=t1MmWWevkAxB282JqtpY4bK7njF7XPfcH2n
-readonly LBRY_WALLET_ADDRESS=bitsbetrippin
-readonly DECRED_WALLET_ADDRESS=bitsbetrippin
-readonly DBIX_WALLET_ADDRESS=0x4c04f53f3bf154aa68f78f45b75f0c9dec120796
-readonly UBIQ_WALLET_ADDRESS=0xb85150eb365e7df0941f0cf08235f987ba91506a
-readonly EXP_WALLET_ADDRESS=0x32ce762bcbb758702b7e830925477976ff514c21
-readonly CHC_WALLET_ADDRESS=CX1HvLSzDANG2tLB6Fm3rSaGZuim8jqvPR
-readonly DIGI_WALLET_ADDRESS=D7TguzPe8RqQG2yrLPRX4Ze7oonDbJ5MFh
-readonly FTC_WALLET_ADDRESS=6fcwKdfaTMaqfqEod3U7va8a47rWEavhkQ
+readonly ETH_WALLET_ADDRESS=0xa74Db7071C225Cf13020a958Df5a5122E312A4e7
+#readonly ETC_WALLET_ADDRESS=0x89b455cfd5adb8ba4a69fd6bd082b3d61efe160f
+readonly XMR_WALLET_ADDRESS=44f12QarXKNFVSeCemenmYT4okycsWj6o4eDLwshaM3rDQLFBCDuWZmHPQHQEQgj11Pn5Yarn5h2E9f7qwoY1JM8S4X7UkB
+#readonly SIA_WALLET_ADDRESS=6ce3c1dc8444ce3dc362425124853e0f32e930eaae1dedc6e919a08d8b6664bf71bd744dda24
+readonly ZCASH_WALLET_ADDRESS=t1SB554NgXz8avaNxUS9ZUi6xzFZxvtTcuy
+#readonly PASCAL_WALLET_ADDRESS=86646-64.59e76e7d7a498fbc
+readonly HUSH_WALLET_ADDRESS=t1RFfAGMizXzaAtGWRz543BsXDLaGXxNZGf
+#readonly LBRY_WALLET_ADDRESS=bitsbetrippin
+readonly DECRED_WALLET_ADDRESS=DsXgw3cgsiY89kdYrQzS17RrQDML45jQy9V
+#readonly DBIX_WALLET_ADDRESS=0x4c04f53f3bf154aa68f78f45b75f0c9dec120796
+readonly UBIQ_WALLET_ADDRESS=0x89c81ed0Bb69c9d46d1bD70783b27a3978C91368
+#readonly EXP_WALLET_ADDRESS=0x32ce762bcbb758702b7e830925477976ff514c21
+#readonly CHC_WALLET_ADDRESS=CX1HvLSzDANG2tLB6Fm3rSaGZuim8jqvPR
+#readonly DIGI_WALLET_ADDRESS=D7TguzPe8RqQG2yrLPRX4Ze7oonDbJ5MFh
+#readonly FTC_WALLET_ADDRESS=6fcwKdfaTMaqfqEod3U7va8a47rWEavhkQ
 
 # suprnova.cc pool login
-readonly MINER_WEBLOGIN=bitsbetrippin
+readonly MINER_WEBLOGIN=nighthawk
 readonly MINER_PASSWORD=x
 
-readonly MINER_NAME=bbtworker01
+readonly MINER_NAME=MinerTest
 
-readonly EMAIL_ADDRESS=bitsbetrippin1@gmail.com
+readonly EMAIL_ADDRESS=inquiry@wongke.net
 
 export GPU_FORCE_64BIT_PTR=0 
 export GPU_MAX_HEAP_SIZE=100 
@@ -515,15 +515,15 @@ ubiq_menu() {
     case $choice in
         1)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;
         2)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to Hodl Pool"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://dbix.hodlpool.com:8007 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://dbix.hodlpool.com:8007 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;
         3)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to Sexy.Pool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://ubq.pool.sexy:9009 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://ubq.pool.sexy:9009 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;
         4)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool and Siacoin to Nanopool"
@@ -569,7 +569,7 @@ expanse_menu() {
     exit 0
 }
 
-ubiq_menu() {
+ubiq_menu4() {
     local choice=$1
 
     if [ -z $choice ]; then
@@ -586,7 +586,7 @@ ubiq_menu() {
     case $choice in
         1)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;         
         *)
             _light_red "$(_error "No such option")"
@@ -595,7 +595,7 @@ ubiq_menu() {
     exit 0
 }
 
-ubiq_menu() {
+ubiq_menu3() {
     local choice=$1
 
     if [ -z $choice ]; then
@@ -612,7 +612,7 @@ ubiq_menu() {
     case $choice in
         1)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;         
         *)
             _light_red "$(_error "No such option")"
@@ -621,7 +621,7 @@ ubiq_menu() {
     exit 0
 }
 
-ubiq_menu() {
+ubiq_menu2() {
     local choice=$1
 
     if [ -z $choice ]; then
@@ -637,7 +637,7 @@ ubiq_menu() {
     case $choice in
         1)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;         
         *)
             _light_red "$(_error "No such option")"
@@ -646,7 +646,7 @@ ubiq_menu() {
     exit 0
 }
 
-ubiq_menu() {
+ubiq_menu1() {
     local choice=$1
 
     if [ -z $choice ]; then
@@ -662,7 +662,7 @@ ubiq_menu() {
     case $choice in
         1)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to UbiqPool Only"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://eu.ubiqpool.io:8008 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;         
         *)
             _light_red "$(_error "No such option")"
