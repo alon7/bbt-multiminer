@@ -21,7 +21,7 @@
 #
 # Wallets
 #
-./wallets.sh
+source ./wallets.sh
 
 # suprnova.cc pool login
 readonly MINER_WEBLOGIN=nighthawk
