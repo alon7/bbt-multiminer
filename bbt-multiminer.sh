@@ -24,12 +24,12 @@
 source ./wallets.sh
 
 # suprnova.cc pool login
-readonly MINER_WEBLOGIN=nighthawk
+readonly MINER_WEBLOGIN=bitsbetrippin
 readonly MINER_PASSWORD=x
 
-readonly MINER_NAME=MinerTest
+readonly MINER_NAME=bbtworker01
 
-readonly EMAIL_ADDRESS=inquiry@wongke.net
+readonly EMAIL_ADDRESS=bitsbetrippin1@gmail.com
 
 export GPU_FORCE_64BIT_PTR=0 
 export GPU_MAX_HEAP_SIZE=100 
