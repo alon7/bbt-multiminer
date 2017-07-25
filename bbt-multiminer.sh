@@ -519,7 +519,7 @@ ubiq_menu() {
         ;;
         2)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to Hodl Pool"
-            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://dbix.hodlpool.com:8007 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
+            $CLAYMORE_DUAL_ETHEREUM -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal $UBIQ_WALLET_ADDRESS -epsw x -eworker $MINER_NAME -allpools 1 -allcoins 1 -mode 1 
         ;;
         3)
             echo "Ubiq: AMD and NVIDIA Claymore - Ubiq to Sexy.Pool Only"
