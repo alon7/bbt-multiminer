@@ -25,6 +25,7 @@ SET LBRY_WALLET_ADDRESS=bitsbetrippin
 SET DECRED_WALLET_ADDRESS=bitsbetrippin
 SET DBIX_WALLET_ADDRESS=0x4c04f53f3bf154aa68f78f45b75f0c9dec120796
 SET UBIQ_WALLET_ADDRESS=0xb85150eb365e7df0941f0cf08235f987ba91506a
+SET MUSICCOIN_WALLET_ADDRESS=0xf09522eba78fcd890e2de503b38cadd436df3845
 
 SET MINER_NAME=bbtworker01
 
@@ -242,7 +243,12 @@ ECHO ====================================================
 ECHO *                    Feathercoin                   *
 ECHO ====================================================
 ECHO 43.  NVIDIA - FTC to F2Pool FTC **AMD Version soon!
-
+ECHO ====================================================
+ECHO *                     MusicCoin                    *
+ECHO ====================================================
+ECHO 44.  AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io)
+ECHO 45.  AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io) and Siacoin to Nanopool
+ECHO 46.  AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io) and LBRY to Coinmine.pl
 ECHO 99 - EXIT
 ECHO.
 
@@ -298,7 +304,10 @@ IF %M%==40 GOTO chc2
 IF %M%==41 GOTO dgb1
 IF %M%==42 GOTO dgb2
 IF %M%==43 GOTO ftc1
-IF %M% GTR 43 GOTO EOF
+IF %M%==44 GOTO musiccoin1
+IF %M%==45 GOTO musiccoin2
+IF %M%==46 GOTO musiccoin3
+IF %M% GTR 46 GOTO EOF
 IF %M% LSS 0 GOTO EOF
 
 
@@ -606,6 +615,27 @@ pause
 ECHO NVIDIA CCMiner Feathercoin Miner - FTC to P2Pool FTC
 %CCMINER2_CUDA% -o stratum+tcp://46.4.0.101:19327 -u %FTC_WALLET_ADDRESS% -p %WORKER_PASSWORD% -a neoscrypt -N60 -i 19.5
 if %ERRORLEVEL% NEQ 0 goto exit
+
+::
+:: MusicCoin Miners
+::
+:musiccoin1
+ECHO AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io)
+%CLAYMORE_DUAL_ETHEREUM% -epool stratum+tcp://uk.gmc.epool.io:8008 -ewal %MUSICCOIN_WALLET_ADDRESS% -epsw x -eworker %MINER_NAME% -allpools 1 -allcoins 1 -mode 1 
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+
+:musiccoin2
+ECHO AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io) and Siacoin to Nanopool
+%CLAYMORE_DUAL_ETHEREUM% -epool stratum+tcp://uk.gmc.epool.io:8008 -ewal %MUSICCOIN_WALLET_ADDRESS% -epsw x -eworker %MINER_NAME% -dpool stratum+tcp://sia-us-east1.nanopool.org:7777 -dwal %SIA_WALLET_ADDRESS%/%MINER_NAME%/%EMAIL_ADDRESS% -dcoin sia -allpools 1
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
+
+:musiccoin3
+ECHO AMD and NVIDIA Claymore - MusicCoin to epool Pool (https://gmc.epool.io) and LBRY to Coinmine.pl
+%CLAYMORE_DUAL_ETHEREUM% -epool stratum+tcp://uk.gmc.epool.io:8008 -ewal %MUSICCOIN_WALLET_ADDRESS% -epsw x -eworker %MINER_NAME% -dpool stratum+tcp://lbc-us.coinmine.pl:6256 -dwal %LBRY_WALLET_ADDRESS%.%MINER_NAME% -dpsw x -dcoin lbc
+if %ERRORLEVEL% NEQ 0 goto exit
+pause
 
 :exit
 ECHO Error while running miner
